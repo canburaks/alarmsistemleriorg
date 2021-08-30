@@ -1,0 +1,3 @@
+User-Agent: *
+Disallow:
+Sitemap: https://alarmsistemleri.org/sitemap.xml

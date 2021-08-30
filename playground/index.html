@@ -1,0 +1,1125 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Alarm Sistemleri | Güvenlik Alarmı | alarmsistemleri.org </title>
+
+
+	<style>
+		/* cspell:disable-file */
+		/* webkit printing magic: print all background colors */
+		:root {
+			--line-height: 1.6;
+			--base-size: 16px;
+			--leading: calc(var(--base-size)*var(--line-height));
+		}
+
+		html {
+			-webkit-print-color-adjust: exact;
+		}
+
+		* {
+			box-sizing: border-box;
+			-webkit-print-color-adjust: exact;
+			line-height: 1.9 !important;
+
+		}
+
+		img {
+			border-radius: 8px;
+		}
+
+		div.page-body {
+			padding: 5vw;
+		}
+
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+
+
+		p {
+			font-size: 16px !important;
+			margin-top: 1.5em;
+			margin-bottom: 1.5em;
+
+
+		}
+
+
+
+
+		@media only screen {
+			body {
+				margin: 2em auto;
+				max-width: 900px;
+				color: rgb(55, 53, 47);
+			}
+		}
+
+		body {
+			line-height: 1.9;
+			/*
+			white-space: pre-wrap;
+			*/
+		}
+
+		a,
+		a.visited {
+			color: inherit;
+			text-decoration: underline;
+		}
+
+		.pdf-relative-link-path {
+			font-size: 80%;
+			color: #444;
+		}
+
+		h1,
+		h2,
+		h3 {
+			letter-spacing: -0.01em;
+			line-height: 1.2;
+			font-weight: 600;
+			margin-bottom: 0;
+		}
+
+		.page-title {
+			font-size: 2.5rem;
+			font-weight: 700;
+			margin-top: 0;
+			margin-bottom: 0.75em;
+		}
+
+		h1 {
+			font-size: 1.875rem;
+			margin-top: 1.875rem;
+		}
+
+		h2 {
+			font-size: 1.5rem;
+			margin-top: 1.5rem;
+		}
+
+		h3 {
+			font-size: 1.25rem;
+			margin-top: 1.25rem;
+		}
+
+		.source {
+			border: 1px solid #ddd;
+			border-radius: 3px;
+			padding: 1.5em;
+			word-break: break-all;
+		}
+
+		.callout {
+			border-radius: 3px;
+			padding: 1rem;
+		}
+
+		figure {
+			margin: 1.25em 0;
+			page-break-inside: avoid;
+		}
+
+		figcaption {
+			opacity: 0.5;
+			font-size: 85%;
+			margin-top: 0.5em;
+		}
+
+		mark {
+			background-color: transparent;
+		}
+
+		.indented {
+			padding-left: 1.5em;
+		}
+
+		hr {
+			background: transparent;
+			display: block;
+			width: 100%;
+			height: 1px;
+			visibility: visible;
+			border: none;
+			border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+		}
+
+		img {
+			max-width: 100%;
+		}
+
+		@media only print {
+			img {
+				max-height: 100vh;
+				object-fit: contain;
+			}
+		}
+
+		@page {
+			margin: 1in;
+		}
+
+		.collection-content {
+			font-size: 0.875rem;
+		}
+
+		.column-list {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.column {
+			padding: 0 1em;
+		}
+
+		.column:first-child {
+			padding-left: 0;
+		}
+
+		.column:last-child {
+			padding-right: 0;
+		}
+
+		.table_of_contents-item {
+			display: block;
+			font-size: 0.875rem;
+			line-height: 1.3;
+			padding: 0.125rem;
+		}
+
+		.table_of_contents-indent-1 {
+			margin-left: 1.5rem;
+		}
+
+		.table_of_contents-indent-2 {
+			margin-left: 3rem;
+		}
+
+		.table_of_contents-indent-3 {
+			margin-left: 4.5rem;
+		}
+
+		.table_of_contents-link {
+			text-decoration: none;
+			opacity: 0.7;
+			border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+		}
+
+		table,
+		th,
+		td {
+			border: 1px solid rgba(55, 53, 47, 0.09);
+			border-collapse: collapse;
+		}
+
+		table {
+			border-left: none;
+			border-right: none;
+		}
+
+		th,
+		td {
+			font-weight: normal;
+			padding: 0.25em 0.5em;
+			line-height: 1.5;
+			min-height: 1.5em;
+			text-align: left;
+		}
+
+		th {
+			color: rgba(55, 53, 47, 0.6);
+		}
+
+		ol,
+		ul {
+			margin: 0;
+			margin-block-start: 0.6em;
+			margin-block-end: 0.6em;
+		}
+
+		li>ol:first-child,
+		li>ul:first-child {
+			margin-block-start: 0.6em;
+		}
+
+		ul>li {
+			list-style: disc;
+		}
+
+		ul.to-do-list {
+			text-indent: -1.7em;
+		}
+
+		ul.to-do-list>li {
+			list-style: none;
+		}
+
+		.to-do-children-checked {
+			text-decoration: line-through;
+			opacity: 0.375;
+		}
+
+		ul.toggle>li {
+			list-style: none;
+		}
+
+		ul {
+			padding-inline-start: 1.7em;
+		}
+
+		ul>li {
+			padding-left: 0.1em;
+		}
+
+		ol {
+			padding-inline-start: 1.6em;
+		}
+
+		ol>li {
+			padding-left: 0.2em;
+		}
+
+		.mono ol {
+			padding-inline-start: 2em;
+		}
+
+		.mono ol>li {
+			text-indent: -0.4em;
+		}
+
+		.toggle {
+			padding-inline-start: 0em;
+			list-style-type: none;
+		}
+
+		/* Indent toggle children */
+		.toggle>li>details {
+			padding-left: 1.7em;
+		}
+
+		.toggle>li>details>summary {
+			margin-left: -1.1em;
+		}
+
+		.selected-value {
+			display: inline-block;
+			padding: 0 0.5em;
+			background: rgba(206, 205, 202, 0.5);
+			border-radius: 3px;
+			margin-right: 0.5em;
+			margin-top: 0.3em;
+			margin-bottom: 0.3em;
+			white-space: nowrap;
+		}
+
+		.collection-title {
+			display: inline-block;
+			margin-right: 1em;
+		}
+
+		time {
+			opacity: 0.5;
+		}
+
+		.icon {
+			display: inline-block;
+			max-width: 1.2em;
+			max-height: 1.2em;
+			text-decoration: none;
+			vertical-align: text-bottom;
+			margin-right: 0.5em;
+		}
+
+		img.icon {
+			border-radius: 3px;
+		}
+
+		.user-icon {
+			width: 1.5em;
+			height: 1.5em;
+			border-radius: 100%;
+			margin-right: 0.5rem;
+		}
+
+		.user-icon-inner {
+			font-size: 0.8em;
+		}
+
+		.text-icon {
+			border: 1px solid #000;
+			text-align: center;
+		}
+
+		.page-cover-image {
+			display: block;
+			object-fit: cover;
+			width: 100%;
+			height: 30vh;
+		}
+
+		.page-header-icon {
+			font-size: 3rem;
+			margin-bottom: 1rem;
+		}
+
+		.page-header-icon-with-cover {
+			margin-top: -0.72em;
+			margin-left: 0.07em;
+		}
+
+		.page-header-icon img {
+			border-radius: 3px;
+		}
+
+		.link-to-page {
+			margin: 1em 0;
+			padding: 0;
+			border: none;
+			font-weight: 500;
+		}
+
+		p>.user {
+			opacity: 0.5;
+		}
+
+		td>.user,
+		td>time {
+			white-space: nowrap;
+		}
+
+		input[type="checkbox"] {
+			transform: scale(1.5);
+			margin-right: 0.6em;
+			vertical-align: middle;
+		}
+
+
+
+		.image {
+			border: none;
+			margin: 1.5em 0;
+			padding: 0;
+			border-radius: 0;
+			text-align: center;
+		}
+
+		.code,
+		code {
+			background: rgba(135, 131, 120, 0.15);
+			border-radius: 3px;
+			padding: 0.2em 0.4em;
+			border-radius: 3px;
+			font-size: 85%;
+			tab-size: 2;
+		}
+
+		code {
+			color: #eb5757;
+		}
+
+		.code {
+			padding: 1.5em 1em;
+		}
+
+		.code-wrap {
+			white-space: pre-wrap;
+			word-break: break-all;
+		}
+
+		.code>code {
+			background: none;
+			padding: 0;
+			font-size: 100%;
+			color: inherit;
+		}
+
+		blockquote {
+			font-size: 1.25em;
+			margin: 1em 0;
+			padding-left: 1em;
+			border-left: 3px solid rgb(55, 53, 47);
+		}
+
+		.bookmark {
+			text-decoration: none;
+			max-height: 8em;
+			padding: 0;
+			display: flex;
+			width: 100%;
+			align-items: stretch;
+		}
+
+		.bookmark-title {
+			font-size: 0.85em;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			height: 1.75em;
+			white-space: nowrap;
+		}
+
+		.bookmark-text {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.bookmark-info {
+			flex: 4 1 180px;
+			padding: 12px 14px 14px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		.bookmark-image {
+			width: 33%;
+			flex: 1 1 180px;
+			display: block;
+			position: relative;
+			object-fit: cover;
+			border-radius: 1px;
+		}
+
+		.bookmark-description {
+			color: rgba(55, 53, 47, 0.6);
+			font-size: 0.75em;
+			overflow: hidden;
+			max-height: 4.5em;
+			word-break: break-word;
+		}
+
+		.bookmark-href {
+			font-size: 0.75em;
+			margin-top: 0.25em;
+		}
+
+		.sans {
+			font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+		}
+
+		.code {
+			font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace;
+		}
+
+		.serif {
+			font-family: Lyon-Text, Georgia, ui-serif, serif;
+		}
+
+		.mono {
+			font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
+		}
+
+		.pdf .sans {
+			font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP';
+		}
+
+		.pdf:lang(zh-CN) .sans {
+			font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC';
+		}
+
+		.pdf:lang(zh-TW) .sans {
+			font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC';
+		}
+
+		.pdf:lang(ko-KR) .sans {
+			font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR';
+		}
+
+		.pdf .code {
+			font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP';
+		}
+
+		.pdf:lang(zh-CN) .code {
+			font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC';
+		}
+
+		.pdf:lang(zh-TW) .code {
+			font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC';
+		}
+
+		.pdf:lang(ko-KR) .code {
+			font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR';
+		}
+
+		.pdf .serif {
+			font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP';
+		}
+
+		.pdf:lang(zh-CN) .serif {
+			font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC';
+		}
+
+		.pdf:lang(zh-TW) .serif {
+			font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC';
+		}
+
+		.pdf:lang(ko-KR) .serif {
+			font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR';
+		}
+
+		.pdf .mono {
+			font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP';
+		}
+
+		.pdf:lang(zh-CN) .mono {
+			font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC';
+		}
+
+		.pdf:lang(zh-TW) .mono {
+			font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC';
+		}
+
+		.pdf:lang(ko-KR) .mono {
+			font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR';
+		}
+
+
+		.highlight-gray {
+			color: rgb(155, 154, 151);
+		}
+
+		.highlight-brown {
+			color: rgb(100, 71, 58);
+		}
+
+		.highlight-orange {
+			color: rgb(217, 115, 13);
+		}
+
+		.highlight-yellow {
+			color: rgb(223, 171, 1);
+		}
+
+		.highlight-teal {
+			color: rgb(15, 123, 108);
+		}
+
+		.highlight-blue {
+			color: rgb(11, 110, 153);
+		}
+
+		.highlight-purple {
+			color: rgb(105, 64, 165);
+		}
+
+		.highlight-pink {
+			color: rgb(173, 26, 114);
+		}
+
+		.highlight-red {
+			color: rgb(224, 62, 62);
+		}
+
+		.highlight-gray_background {
+			background: rgb(235, 236, 237);
+		}
+
+		.highlight-brown_background {
+			background: rgb(233, 229, 227);
+		}
+
+		.highlight-orange_background {
+			background: rgb(250, 235, 221);
+		}
+
+		.highlight-yellow_background {
+			background: rgb(251, 243, 219);
+		}
+
+		.highlight-teal_background {
+			background: rgb(221, 237, 234);
+		}
+
+		.highlight-blue_background {
+			background: rgb(221, 235, 241);
+		}
+
+		.highlight-purple_background {
+			background: rgb(234, 228, 242);
+		}
+
+		.highlight-pink_background {
+			background: rgb(244, 223, 235);
+		}
+
+		.highlight-red_background {
+			background: rgb(251, 228, 228);
+		}
+
+		.block-color-default {
+			color: inherit;
+			fill: inherit;
+		}
+
+		.block-color-gray {
+			color: rgba(55, 53, 47, 0.6);
+			fill: rgba(55, 53, 47, 0.6);
+		}
+
+		.block-color-brown {
+			color: rgb(100, 71, 58);
+			fill: rgb(100, 71, 58);
+		}
+
+		.block-color-orange {
+			color: rgb(217, 115, 13);
+			fill: rgb(217, 115, 13);
+		}
+
+		.block-color-yellow {
+			color: rgb(223, 171, 1);
+			fill: rgb(223, 171, 1);
+		}
+
+		.block-color-teal {
+			color: rgb(15, 123, 108);
+			fill: rgb(15, 123, 108);
+		}
+
+		.block-color-blue {
+			color: rgb(11, 110, 153);
+			fill: rgb(11, 110, 153);
+		}
+
+		.block-color-purple {
+			color: rgb(105, 64, 165);
+			fill: rgb(105, 64, 165);
+		}
+
+		.block-color-pink {
+			color: rgb(173, 26, 114);
+			fill: rgb(173, 26, 114);
+		}
+
+		.block-color-red {
+			color: rgb(224, 62, 62);
+			fill: rgb(224, 62, 62);
+		}
+
+		.block-color-gray_background {
+			background: rgb(235, 236, 237);
+		}
+
+		.block-color-brown_background {
+			background: rgb(233, 229, 227);
+		}
+
+		.block-color-orange_background {
+			background: rgb(250, 235, 221);
+		}
+
+		.block-color-yellow_background {
+			background: rgb(251, 243, 219);
+		}
+
+		.block-color-teal_background {
+			background: rgb(221, 237, 234);
+		}
+
+		.block-color-blue_background {
+			background: rgb(221, 235, 241);
+		}
+
+		.block-color-purple_background {
+			background: rgb(234, 228, 242);
+		}
+
+		.block-color-pink_background {
+			background: rgb(244, 223, 235);
+		}
+
+		.block-color-red_background {
+			background: rgb(251, 228, 228);
+		}
+
+		.select-value-color-default {
+			background-color: rgba(206, 205, 202, 0.5);
+		}
+
+		.select-value-color-gray {
+			background-color: rgba(155, 154, 151, 0.4);
+		}
+
+		.select-value-color-brown {
+			background-color: rgba(140, 46, 0, 0.2);
+		}
+
+		.select-value-color-orange {
+			background-color: rgba(245, 93, 0, 0.2);
+		}
+
+		.select-value-color-yellow {
+			background-color: rgba(233, 168, 0, 0.2);
+		}
+
+		.select-value-color-green {
+			background-color: rgba(0, 135, 107, 0.2);
+		}
+
+		.select-value-color-blue {
+			background-color: rgba(0, 120, 223, 0.2);
+		}
+
+		.select-value-color-purple {
+			background-color: rgba(103, 36, 222, 0.2);
+		}
+
+		.select-value-color-pink {
+			background-color: rgba(221, 0, 129, 0.2);
+		}
+
+		.select-value-color-red {
+			background-color: rgba(255, 0, 26, 0.2);
+		}
+
+		.checkbox {
+			display: inline-flex;
+			vertical-align: text-bottom;
+			width: 16;
+			height: 16;
+			background-size: 16px;
+			margin-left: 2px;
+			margin-right: 5px;
+		}
+
+		.checkbox-on {
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+		}
+
+		.checkbox-off {
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+		}
+	</style>
+</head>
+
+<body>
+	<article id="219a533a-72de-47ec-a2ec-8814c488a578" class="page sans">
+		<header><img class="page-cover-image" alt="Alarm sistemleri"
+				src="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/happy-father-with-daughter-standing-near-open-balcony-smiling_(1).jpg"
+				style="object-position:center 50%" />
+			<div class="page-header-icon page-header-icon-with-cover"><span class="icon">👮🏼‍♂️</span></div>
+			<h1 class="page-title">Alarm Sistemleri</h1>
+		</header>
+		<div class="page-body">
+			<p id="c8cb87f6-42e4-4648-b9a8-bc4fd4186a41" class="">
+			</p>
+			<h1 id="cb0a2f2e-72ba-45f0-bb25-8c3d7dceca65" class="">Güvenlik <strong>Alarmı ve Alarm Sistemleri </strong>
+			</h1>
+			<p id="5e0547a3-f2bc-461d-9eb6-229828ca35c0" class=""><strong>Alarm</strong>, tehlikeli ya da tehlike
+				oluşturabilecek bir durumu bildirmek için verilen işaret, sinyal anlamına gelir. <strong>Alarm
+					durumu</strong> ise olası tehlikeyi önlemek için hazır ve uyanık vaziyette olma anlamı taşır.
+				Bir <strong>alarm sistemi</strong> bir bina, ev ya da iş yerini güvende tutabilmek adına oluşturulan
+				elektronik güvenlik sistemleridir.</p>
+			<p id="227c2d62-15d5-4a21-b064-df55763f2865" class=""><strong>Alarm sistemleri</strong> genel
+				hatlarıyla acil durum uyarı cihazları, yangın algılama ve uyarı sistemleri, karbon monoksit
+				sensörleri, duman dedektörleri, hırsız alarmları, panik butonları ve kapalı devre televizyon
+				sistemleri olan CCTV&#x27;leri kapsar.</p>
+			<p id="e21f03c1-9e4e-40f5-b0c5-22f77ae65079" class="">Ayrıca, nesnelerin interneti ile birlikte yeni
+				nesil akıllı sistemler sistemler olarak bilinen akıllı ev sistemleri aynı zamanda  alarm sistemleri
+				teknolojilerinde de etkili olmuştur.</p>
+			<p id="94802f68-2bd6-43ce-b522-eb161d1d0775" class="">
+			</p>
+			<p id="7f16cc2a-21b4-4096-95c4-880b5bd6446d" class="">
+			</p>
+			<h3 id="a47e40d5-573a-416b-af23-bbfa03d20b23" class=""><strong>Alarm sistemlerinin amaçları</strong></h3>
+			<div id="0c1fee22-ab27-42ea-a235-1184f202342d" class="column-list">
+				<div id="cc19f564-2f2a-4205-a127-ea2107346d93" style="width:62.5%" class="column">
+					<p id="6ec0ab42-4340-442d-8f96-a813a687c09a" class=""><strong>Güvenlik alarmı</strong> özel veya
+						kamu mülklerine izinsiz girişleri ve istenmeyen mülk hasarlarını ve bunlardan doğacak tüm
+						sonuçları önlemek için tasarlanmış sistemlerdir. </p>
+					<p id="8bd82d9b-75a7-4798-871a-3d85182ed883" class="">Güvenlik personeli ile alarm sistemleri uyum
+						içerisinde olduğunda, teorik olarak istenmeyen tüm durumlar önlenebilir. </p>
+					<p id="8180e901-8884-4699-81a3-f0984ddd2346" class="">İzinsiz girişler başlığı hırsızlık olaylarını
+						kapsadığı gibi bilgi sızıntısı oluşturacak durumları da içine almaktadır. Mülkiyet hasarından
+						korunmaktan kasıt ise doğal felaketleri de içine alan bir dizi durumlar için oluşturulan deprem
+						uyarı sistemi, yangın algılama ve uyarı sistemi gibi elektronik ağırlıklı çözümlere alarm
+						sistemleri denmektedir.</p>
+					<p id="b3176468-643d-423e-8e73-3351757af2ff" class="">
+					</p>
+					<p id="f8683593-1a82-4e8f-bdef-c8a2bcfd4ae2" class=""><a
+							href="http://www.konya.pol.tr/konya-polis-hirsizlik-ile-mucadele">Alarm sistemleri hırsızlık
+							ile mücadelede en etkili yöntemlerden biridir</a>.</p>
+				</div>
+				<div id="746a6f8d-d5bc-48e0-a2dc-dd39aa46159c" style="width:37.49999999999999%" class="column">
+					<figure id="e9390128-e311-4b6f-be0e-f37dc026943e" class="image"><a
+							href="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/MP_B-1x.png"><img
+								style="width:336px" alt="akıllı otomasyon ve güvenlik sistemleri"
+								src="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/MP_B-1x.png" /></a></figure>
+				</div>
+			</div>
+			
+			<h2 id="08428645-0a29-4c93-839a-4ca1f47be0f1" class=""><strong>Akıllı güvenlik sistemleri</strong></h2>
+			<p id="f4dc2098-9729-414e-9daa-0a0534b199bf" class="">Akıllı ev teknolojileri son yıllarda gittikçe
+				hayatlarımıza girmeye başladılar. Akıllı süpürgeler, akıllı saatler, akıllı buzdolapları gibi çok
+				çeşitli cihazlar, internete bağlanarak akıllı ev aletleri oldular. </p>
+			<p id="98d10944-0ef3-4032-ae42-b93a90dc9d5a" class="">İşte bu akıllı sistemlerin güvenlik alarm sistemleri
+				ile yaptıkları evliliğe <a href="https://livicomturkiye.com/">akıllı ev güvenlik sistemleri</a> diyoruz.
+				ürünler kullanarak kişilerin ve mülklerin güvenliğini üst düzeye çıkaran güvenlik sistemleri. <a
+					href="https://www.filizguvenlik.com.tr/akilli-ev-sistemleri/">Akıllı ev sistemleri hakkında detaylı
+					bilgiler</a> başlıklı yazıyı okuyabilirsiniz.</p>
+			<div id="7a10aa18-670a-4750-8b7c-35ad7d9745f7" class="column-list">
+				<div id="2201f0a1-ab3c-451c-a0b1-ded3c96d31b7" style="width:50%" class="column">
+					<h3 id="f687919c-73de-4e62-91c3-8c4e56947ba6" class=""><strong>Akıllı ev teknolojisi nedir?</strong>
+					</h3>
+				</div>
+				<div id="38f0c722-202c-4217-805e-ce1c5ffb477c" style="width:50%" class="column">
+					<h3 id="f7f4fc93-b726-446d-8fd8-718264e61e57" class=""><strong>Akıllı evler</strong></h3>
+				</div>
+			</div>
+			<div id="6edd76e7-d62d-4f58-8deb-78ece9cbd3e6" class="column-list">
+				<div id="b5eeb17b-9ae8-425b-97ff-bd529fb2d776" style="width:50%" class="column">
+					<p id="5ba0bebf-1220-42b6-8b5a-1e4ec0ec0fe1" class="">Akıllı ev teknolojisi, bilgisayar sistemleri
+						ve elektroniği kullanan her türlü otomasyon veya bağlantıya verilen isimdir. Onu akıllı bir
+						sistem yapan şey, evinizdeki aydınlatma gibi cihazları otomatik olarak kontrol edebilmesidir.
+					</p>
+				</div>
+				<div id="7541c03d-acb5-4230-9ae1-999f967c35d3" style="width:50%" class="column">
+					<p id="0fb97aca-406c-4d17-8373-3ccbe7142fd7" class="">Akıllı ev, ev aletlerini ve eşyalarını kontrol
+						edebilen bir evdir. Bağlı oldukları bir ağ üzerinden bir mobil cihaz veya başka bir bilgisayar
+						yardımıyla çalışır.</p>
+				</div>
+			</div>
+			<div id="950fb2ac-4d96-4a72-af80-d7b05e4346ca" class="column-list">
+				<div id="3e1fbd2d-d455-4acd-85f1-aafdaf6e51c4" style="width:50%" class="column">
+					<h3 id="e99339d2-8ae0-4b59-b1d3-63d0a0e8e5b8" class=""><strong>Akıllı ev aletleri
+							orkestrasyonu</strong></h3>
+				</div>
+				<div id="9e6e5ecb-1057-467e-bb91-928215f72824" style="width:50%" class="column">
+					<h3 id="17844d60-5046-491c-a944-ee73ef282e96" class=""><strong>Akıllı Hub&#x27;ın görevleri</strong>
+					</h3>
+				</div>
+			</div>
+			<div id="bda7fc52-c8c6-4308-adab-1138ebf1c8b7" class="column-list">
+				<div id="1100a9ef-f72f-4b7c-8e3c-7259cfc680a6" style="width:50%" class="column">
+					<p id="f7e75923-8280-420b-b236-e0a48d185d93" class="">Akıllı evler, birbirine bağlı akıllı cihazlar
+						ve sensörlerden oluşur. Bu bağlı cihazlar, <strong>akıllı hub</strong> ya da <strong>smart
+							hub</strong> tarafından yönetilen bir ağda birbirleriyle iletişim kurar.</p>
+				</div>
+				<div id="99b5dd48-f020-4359-adc0-0c4ca6252220" style="width:50%" class="column">
+					<p id="665aad62-397d-473a-90d6-4ab2e02d253a" class="">Akıllı hub, cihazlar arasında bir köprü görevi
+						görür ve onlara bağlantı sağlar. Bir ağ üzerinden bir uygulama veya bilgisayar aracılığıyla
+						kullanıcıya bilgi verirken bu şekilde birbirleriyle iletişim kurabilir. Daha önce de
+						belirtildiği gibi akıllı ev ürünleri</p>
+				</div>
+			</div>
+			<p id="9c39c7d6-0d67-410d-a344-c48a0b7d64fa" class="">
+			</p>
+			<h3 id="962b02e7-caf1-4fbf-b7f9-78d7da68dde8" class=""><strong>Akıllı ev otomasyonu</strong></h3>
+			<p id="6526c9d3-65c4-40ae-b1b2-39e00ca03a29" class=""><strong>Akıllı ev otomasyonu</strong>, normalde akıllı
+				ev cihazları kullanılarak manuel olarak yapılması gereken görevleri otomatik hale getirir. Örneğin
+				akıllı aydınlatma cihazınızı dilediğiniz zaman telefondan ayarlıyor olabilirsiniz. Gece belirli bir
+				saatten sonra daha loş bir ışığa otomatik olarak geçilmesi ise akıllı ev otomasyonudur.</p>
+			<h3 id="4afaa9a3-7574-4b80-a0dd-4de50ec68d92" class=""><strong>Akıllı ev otomasyonunun faydaları</strong>
+			</h3>
+			<p id="45cbb28f-a50a-4d1a-8e6b-b04554ef99a6" class="">Ev otomasyonu hayatı daha konforlu hale getirir ve
+				hatta paradan tasarruf etmenizi sağlar. Isıtma, soğutma ve elektrik maliyetlerini azaltabilirsiniz. Ev
+				otomasyonu, akıllı ev güvenlik sistemleri ve alarmları ile daha fazla güvenliğe de yol açabilir. Ayrıca
+				akıllı güvenlik cihazlarıyla fiziksel güvenlikten de yararlanır</p>
+			<p id="18f77ab4-e0a6-4a53-b07d-2067d3f7b322" class="">
+			</p>
+			<p id="e46e4af1-83b4-4f7b-8cd2-a5f21f368b5b" class="">
+			</p>
+			<figure id="18dc4b75-f619-468b-bf47-07b160d8ca1b" class="image"><a
+					href="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/person-using-smartphone-his-automated-home-squashed.jpg"><img
+						style="width:1000px"
+						src="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/person-using-smartphone-his-automated-home-squashed.jpg" /></a>
+			</figure>
+			<p id="08bd4caf-bfc7-4cc5-b30c-baa69ac41323" class="">
+			</p>
+			<p id="b140ebf0-e68b-40cf-8c66-eb9b6d60e1e7" class="">
+			</p>
+			<h2 id="ff59ef6e-8533-4437-8684-2e810a2fd926" class="">Alarm sistemleri bileşenleri: Alarm paneli, kapı ve
+				pencere sensörleri</h2>
+			<p id="5337929a-4174-43ff-ab03-cb235c8c62bf" class="">Belirli bir olay (hareket, cam kırılması, titreşim)
+				durumunda alarm paneline mesaj gönderen elektronik aletlere alarm sensörü veya alarm dedektörü denir.
+			</p>
+			<p id="31a4cbb7-df7a-4036-9f32-974d75fa5698" class="">Alarm sistemleri bir çok alanda kullanılmaktadırlar.
+				Gerek iş yerleri gerekse evler belirli tehlikelere ve risklere sahip olduklarından (hırsızlık, yangın
+				vs.) özellikle bu yerlerde alarm sistemleri gittikçe yaygın kullanıma sahip olmaktadır. Hem iş yeri hem
+				<a href="https://www.pronet.com.tr/ev-guvenligi">ev güvenlik sistemleri</a> bir çok sensör ve
+				dedektörden oluşmaktadır. Alarm sistemleri dedektörlerinden bazıları şunlardır:
+			</p>
+			<h3 id="6a701989-dcc3-4a0b-b645-8709931c68a2" class=""><strong>Alarm Kontrol Paneli</strong></h3>
+			<div id="b8d8c3a5-39e9-48c9-83c1-59bca8791855" class="column-list">
+				<div id="2d28aee9-a91d-4c46-b059-aa53df41a7f8" style="width:50%" class="column">
+					<p id="090e3de0-a5e8-4ca8-9e22-d20fe91d592f" class="">Tüm sistemin bir aradalığını sağlayan en
+						önemli bileşen <mark class="highlight-gray"><a
+								href="https://ajax.systems/products/hubs/">a</a></mark><mark class="highlight-gray"><a
+								href="https://ajax.systems/products/hubs/"><strong>larm kontrol
+									paneli</strong></a></mark><strong>&#x27;dir</strong>. Yalnızca hırsızlığa karşı
+						önlem olmakla kalmayıp, aynı zamanda yangın ve acil sağlık durumları gibi konularda bizlere
+						yardımcı olabilecek alarm sistemi bileşenidir. Sistemin beynidir diyebiliriz. Genel olarak iki
+						tip kontrol paneli mevcuttur. Tek başına kullanılabilen ve merkeze bağlanan.</p>
+				</div>
+				<div id="1d621bde-c089-4ea0-bbae-4d0bd08295b5" style="width:50%" class="column">
+					<figure id="378fd958-130f-4c42-82dd-ed1ce98bd48e" class="image"><a
+							href="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/hub-2-plus-siyah-panel-ajax-3328-51-O.jpg"><img
+								style="width:400px" alt="alarm sistemi kontrol paneli"
+								src="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/hub-2-plus-siyah-panel-ajax-3328-51-O.jpg" /></a>
+						<figcaption>Alarm Kontrol Paneli</figcaption>
+					</figure>
+				</div>
+			</div>
+			<p id="25e3af7c-4f0b-4b73-ae70-2c15d8ae4cff" class="">
+			</p>
+			<p id="88112663-37b9-4d07-966a-9d6f87f2fbee" class="">
+			</p>
+			<h3 id="3488e8c9-fb75-4557-bf2d-4ac597a12ff2" class=""><strong>Manyetik Kontak</strong></h3>
+			<div id="63657663-9eb1-4ca3-86f0-029b702cb90a" class="column-list">
+				<div id="3030e769-dd31-4ad3-ab36-96d8a03a7f2a" style="width:50%" class="column">
+					<figure id="9e9232c3-bc0e-4329-ba29-4f842b258f35" class="image"><a
+							href="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/paradox-manyetik-kontak-dct2x.jpg"><img
+								style="width:500px" alt="alarm sistemi manyetik kontak"
+								src="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/paradox-manyetik-kontak-dct2x.jpg" /></a>
+						<figcaption>Alarm Sistemi Elemanı: Manyetik Kontak</figcaption>
+					</figure>
+				</div>
+				<div id="ef3ed0d5-6d0b-4fa9-882d-731d2c013e22" style="width:50.000000000000014%" class="column">
+					<p id="1211347c-4428-413b-8c2c-1c1e160a8802" class="">Manyetik kontaklar en bilinen alarm sistemi
+						bileşenidir. Kapı ve pencere gibi yerlere takılırlar. İki tipi mevcuttur: </p>
+					<ul id="61c53a82-143f-4e2a-97be-a99c39d1876e" class="bulleted-list">
+						<li>En basit versiyonunda, örneğin istenmeyen bir pencerenin açılması durumunda, üzerindeki
+							siren aktif hale gelir ve etrafa yüksek ses ile uyarı verir. </li>
+					</ul>
+					<ul id="24e64c9c-dc45-47fe-a229-786d54863dbc" class="bulleted-list">
+						<li>Diğer tip manyetik kontaklar ise alarm paneli ile iletişime geçip sistemi durumdan haberdar
+							ederler.</li>
+					</ul>
+				</div>
+			</div>
+			<p id="27a2a0b5-7de9-47cb-9b10-e1d0630a7aa3" class="">
+			</p>
+			<h3 id="45ac26f4-1ab8-4896-a063-da52dfc49834" class=""><strong>Hareket Algılayıcılar (PIR)</strong></h3>
+			<div id="ece990e1-ab28-4454-aeb6-cf38b967a8ff" class="column-list">
+				<div id="8385ba4d-a700-40b1-a18f-3b88952faa70" style="width:50%" class="column">
+					<p id="49fa9c89-ff4a-4b1b-8d82-f1c953c262a5" class="">Bu alarm sistemi bileşenleri, kendi bölgesine
+						kızılötesi sinyaller gönderir. İnsan gözüyle görülemeseler de <a
+							href="https://campuspress.yale.edu/soneralbayrak/2017/10/25/siyah-cisim-isimasi/">tüm
+							cisimler etraflarına ışıma yaparlar</a>. Cihazın basitliğine rağmen, kullanımı oldukça
+						yaygın ve gereklidir. </p>
+					<p id="543fcab1-cb9e-4d6c-882a-e56891e48d6f" class="">Genellikle PIR (Passive Infrared Sensor)
+						olarak da bilinirler. Bir hırsız alarm sistemi kurulumu yapılırken, kesinlikle kullanılması
+						gereken bileşenlerdendir.</p>
+				</div>
+				<div id="9181522c-9e76-487a-bd5c-a597e1c5e234" style="width:50%" class="column">
+					<figure id="7c4f861b-5cff-4963-af4a-e4039d341637" class="image"><a
+							href="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/ajax-pir.jpg"><img
+								style="width:900px"
+								src="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/ajax-pir.jpg" /></a></figure>
+				</div>
+			</div>
+			<p id="14d937fd-6404-418c-bd15-7b6fd4decec4" class="">
+			</p>
+			<h3 id="89e53e27-a0aa-4f18-8bd7-eed338719e20" class="">Duman Dedektörü &amp; Isı Dedektörü</h3>
+			<div id="4091a4a8-a233-4bf4-bf3b-fe1bdde07232" class="column-list">
+				<div id="9b6fccfc-5545-421b-9bf6-89494ca5e973" style="width:50%" class="column">
+					<figure id="12578c77-559c-442d-9892-7a7b1e6ab5a3" class="image"><a
+							href="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/duman-dedektoru-kablosuz.jpg"><img
+								style="width:900px" alt="yangın alarm sistemleri dedektörü"
+								src="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/duman-dedektoru-kablosuz.jpg" /></a>
+					</figure>
+				</div>
+				<div id="66da924a-036f-4eba-aee6-c1522e6fcb14" style="width:50%" class="column">
+					<p id="412d02ca-09ad-46bd-beac-96d3239cc155" class="">Genel olarak <a
+							href="https://www.mavili.com.tr/urunlerimiz/akilli-adresli-yangin-algilama-ve-alarm-sistemleri.html">yangın
+							alarm sistemleri</a> olarak bilinen duman dedektörü. Günde yirmi dört saat odadaki güvenliği
+						izleyen bu alarm sistemleri bileşenleri, anında duman ve sıcaklıktaki keskin sıçramaları fark
+						ederler. Kablolu ve kablosuz olanları vardır. </p>
+					<p id="9e629505-94a9-4816-a87e-dda2a30315d6" class="">Yangınları önlemede en etkili yöntem erken
+						farkına varmaktır. Dolayısıyla bu dedektörler yangın felaketini önlemede çok önemlidirler.</p>
+				</div>
+			</div>
+			<p id="42ba9a29-fbb7-4625-ad60-8f3e9c77b406" class="">
+			</p>
+			<p id="e8dacd0c-942c-472b-8765-d247a0b59be1" class="">
+			</p>
+			<h3 id="53e0b846-9357-4aa8-b12a-f651f66ae082" class="">Su Baskın Sensörleri</h3>
+			<div id="1cd16ac4-4391-45e2-aa7e-a5a0709c5fd2" class="column-list">
+				<div id="a822f359-385c-46d5-99b9-6da244364cf8" style="width:50%" class="column">
+					<p id="89dcf80a-6219-4346-9c4f-bddb0e91aa0d" class="">Su baskını ya da su taşkını olarak bilinen
+						durumlar için en uygun alarm sistemleri bileşenleridir. Su kaçağının olduğu anlarda su kaynağını
+						kapatırlar. Islanma durumunda tehlike yaratabilecek durumlar için idealdirler. Su sayaçlarından
+						veri toplayabilirler.</p>
+				</div>
+				<div id="1d2ffdd6-07e9-411e-bd2c-e41e96d48e32" style="width:50%" class="column">
+					<figure id="516e998b-34e6-401c-8cbe-e3a36a563cce" class="image"><a
+							href="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/su-baskn-ajax.jpg"><img
+								style="width:900px"
+								src="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/su-baskn-ajax.jpg" /></a>
+					</figure>
+				</div>
+			</div>
+			<p id="07c58513-21c3-4404-81df-4ac33f652677" class="">
+			</p>
+			<h3 id="c61a18e3-74ca-4f80-9558-39fc4f2177cf" class=""><strong>Güvenlik Kameraları (Gözetleme
+					Kameraları)</strong></h3>
+			<p id="e912eebb-f990-4b5d-8d73-dde68916f7a3" class="">Genel bir güvenlik sisteminin bir diğer önemli
+				bileşeni <a href="https://tr.wikipedia.org/wiki/Kapal%C4%B1_devre_televizyon">gözetleme kameraları</a>
+				olarak da bilinen (CCTV) sistemleridir. Kamuda en bilinen örnekleri MOBESE kameralarıdır. En az bilinen
+				ve kullanılan güvenlik kameraları da <a
+					href="https://sarkac.org/2020/08/kizilotesi-kamera-nedir-ne-ise-yarar/">Kızılötesi
+					kameralar</a>&#x27;dır. Güvenlik kameralarının çok fazla işlevi vardır. Örneğin:</p>
+			<ul id="bd526730-2587-4651-84cf-42ad7b791487" class="bulleted-list">
+				<li>Mülkünüze kimin girip çıktığını ve kimin zile bastığını bilmenizi sağlar.</li>
+			</ul>
+			<ul id="9b359f7a-9848-4b0b-aaad-3700e42b739e" class="bulleted-list">
+				<li>Dünyanın neresinde olursanız olun, her şeyin yolunda olup olmadığını görmek için evinizi izlemenize
+					olanak tanır?</li>
+			</ul>
+			<ul id="11b8cc14-24bb-47ab-b59e-d34594f049b9" class="bulleted-list">
+				<li>Vandalları, hırsızları ve hırsızları caydırma konusunda çok etikilidirler.</li>
+			</ul>
+			<ul id="5ac6fa36-d2b3-42b9-96d6-dcdbc40d71e8" class="bulleted-list">
+				<li>Daha da kötüsü olursa, kesin görüntüler kaydetmenizi ve suçluları belirlemenizi sağlarlar.</li>
+			</ul>
+			<div id="2df4e9e0-a90c-4d0e-bf65-dfcd5c10dfab" class="column-list">
+				<div id="220562c0-3824-418c-b463-0f1c25b62d86" style="width:50%" class="column">
+					<figure id="342599b6-ca8c-4695-95b0-4600e68c125e" class="image"><a
+							href="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/security-camera-mounted-modern-building-orange-wall-horizontal-view-close-up_(1).jpg"><img
+								style="width:1920px"
+								src="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/security-camera-mounted-modern-building-orange-wall-horizontal-view-close-up_(1).jpg" /></a>
+					</figure>
+				</div>
+				<div id="5579166d-43c8-489e-97f2-d28a5a0fb497" style="width:50.000000000000014%" class="column">
+					<p id="ba1920a7-3b0a-4e01-83d9-a5927c28f6f5" class="">Gözetleme kameralarına bilgisayarlardan,
+						akıllı telefonlardan ve tabletlerden uzaktan erişilebilir. Ev sahipleri şehir dışındayken,
+						teslimatlarını, çocuk bakıcılarını ve diğer personelini izlemek için kullanırlar. Ayrıca okuldan
+						sonra çocukların gelişini izlemeye de yarar.</p>
+				</div>
+			</div>
+			<p id="40c8ab1a-0560-4930-87db-e4b739f2a599" class="">
+			</p>
+			<p id="138290a0-c821-456b-9e5b-7a2349de72ba" class="">Gözetleme kameralarına bilgisayarlardan, akıllı
+				telefonlardan ve tabletlerden uzaktan erişilebilir. Ev sahipleri şehir dışındayken, teslimatlarını,
+				çocuk bakıcılarını ve diğer personelini izlemek için kullanırlar. </p>
+			<ul id="9fe6a0e1-8e9a-4a2d-9dcc-3f4fbc7f82f1" class="bulleted-list">
+				<li>Dış mekan kamerası (Outdoor camera)</li>
+			</ul>
+			<ul id="702be956-45ed-46a7-b42c-812a83b4dddf" class="bulleted-list">
+				<li>Kubbe güvenlik kamerası (Dome camera)</li>
+			</ul>
+			<ul id="d4950a60-0e6e-4bf0-a14f-d7ef79a4ad5a" class="bulleted-list">
+				<li>IP kamera ve kablosuz ağ kamerası (IP TV, WLAN network camera)</li>
+			</ul>
+			<ul id="06c42712-220c-4756-8373-d5b316129446" class="bulleted-list">
+				<li>Kızılötesi kamera</li>
+			</ul>
+			<p id="880a1378-bab0-40dc-b211-311748f476f1" class="">
+			</p>
+			<p id="80eba0e8-0c8f-47aa-89c6-eb0846c14109" class="">
+			</p>
+			<p id="68d2842b-beda-4870-9a7c-a46060e9251b" class="">
+			</p>
+			<p id="3fa2d0c5-acaf-48e5-97ee-b798890e9785" class="">
+			</p>
+		</div>
+	</article>
+</body>
+
+</html>
