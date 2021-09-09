@@ -4,7 +4,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Alarm Sistemleri | Güvenlik Alarmı | alarmsistemleri.org </title>
-	
+
 	<script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -114,12 +114,13 @@
 		/* webkit printing magic: print all background colors */
 		:root {
 			--line-height: 1.6;
-			--base-size: 16px;
+			--base-size: 20px;
 			--leading: calc(var(--base-size)*var(--line-height));
 		}
 
 		html {
 			-webkit-print-color-adjust: exact;
+			font-size: 16px;
 		}
 
 		* {
@@ -136,7 +137,35 @@
 			padding: 32px;
 			border-radius: 24px;
 			margin-top: 32px;
+			display: flex;
+			flex-direction: column;
+			align-items: stretch;
 		}
+
+		@media only screen and (max-width: 480px) {
+			div.column-list {
+				background-color: white;
+				border: 1px solid rgba(206, 205, 202, 0.5);
+				box-shadow: 0 4px 8px 1px rgba(0, 120, 223, 0.2);
+				padding: 32px;
+				border-radius: 24px;
+				margin-top: 32px;
+				display: flex !important;
+				flex-direction: column !important;
+				justify-content: start !important;
+				align-items: stretch !important;
+			}
+
+			div.column-list .column {
+				width: 100% !important;
+			}
+
+		}
+
+		thead tr:nth-child(5) {
+			display: none !important;
+		}
+
 
 		img {
 			border-radius: 8px;
@@ -282,10 +311,6 @@
 			font-size: 0.875rem;
 		}
 
-		.column-list {
-			display: flex;
-			justify-content: space-between;
-		}
 
 		.column {
 			padding: 0 1em;
@@ -983,33 +1008,36 @@
 						href="#4d414376-8055-40d2-89e7-22a4db6bf044">En İyi Alarm Sistemleri ve Güvenlik Sistemleri
 						Firmaları Listesi</a></div>
 			</nav>
-			<h3 id="a47e40d5-573a-416b-af23-bbfa03d20b23" class=""><strong>Alarm sistemlerinin amaçları</strong></h3>
 			<div id="0c1fee22-ab27-42ea-a235-1184f202342d" class="column-list">
-				<div id="cc19f564-2f2a-4205-a127-ea2107346d93" style="width:62.5%" class="column">
-					<p id="6ec0ab42-4340-442d-8f96-a813a687c09a" class=""><strong>Güvenlik alarmı</strong> özel veya
-						kamu mülklerine izinsiz girişleri ve istenmeyen mülk hasarlarını ve bunlardan doğacak tüm
-						sonuçları önlemek için tasarlanmış sistemlerdir. </p>
-					<p id="8bd82d9b-75a7-4798-871a-3d85182ed883" class="">Güvenlik personeli ile alarm sistemleri uyum
-						içerisinde olduğunda, teorik olarak istenmeyen tüm durumlar önlenebilir. </p>
-					<p id="8180e901-8884-4699-81a3-f0984ddd2346" class="">İzinsiz girişler başlığı hırsızlık olaylarını
-						kapsadığı gibi bilgi sızıntısı oluşturacak durumları da içine almaktadır. Mülkiyet hasarından
-						korunmaktan kasıt ise doğal felaketleri de içine alan bir dizi durumlar için oluşturulan deprem
-						uyarı sistemi, yangın algılama ve uyarı sistemi gibi elektronik ağırlıklı çözümlere alarm
-						sistemleri denmektedir.</p>
-					<p id="b3176468-643d-423e-8e73-3351757af2ff" class="">
-					</p>
-					<p id="f8683593-1a82-4e8f-bdef-c8a2bcfd4ae2" class=""><a
-							href="http://www.konya.pol.tr/konya-polis-hirsizlik-ile-mucadele">Alarm sistemleri hırsızlık
-							ile mücadelede en etkili yöntemlerden biridir</a>.</p>
-				</div>
-				<div id="746a6f8d-d5bc-48e0-a2dc-dd39aa46159c" style="width:37.49999999999999%" class="column">
+				<h3 id="a47e40d5-573a-416b-af23-bbfa03d20b23" class=""><strong>Alarm sistemlerinin amaçları</strong>
+				</h3>
+
+				<div id="746a6f8d-d5bc-48e0-a2dc-dd39aa46159c" class="column">
 					<figure id="e9390128-e311-4b6f-be0e-f37dc026943e" class="image"><a
 							href="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/MP_B-1x.png"><img
 								style="width:336px" alt="akıllı otomasyon ve güvenlik sistemleri"
 								src="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/MP_B-1x.png" /></a></figure>
 				</div>
+				<div id="cc19f564-2f2a-4205-a127-ea2107346d93" class="column">
+					<p id="6ec0ab42-4340-442d-8f96-a813a687c09a" class="p"><strong>Güvenlik alarmı</strong> özel veya
+						kamu mülklerine izinsiz girişleri ve istenmeyen mülk hasarlarını ve bunlardan doğacak tüm
+						sonuçları önlemek için tasarlanmış sistemlerdir. </p>
+					<p id="8bd82d9b-75a7-4798-871a-3d85182ed883" class="p">Güvenlik personeli ile alarm sistemleri uyum
+						içerisinde olduğunda, teorik olarak istenmeyen tüm durumlar önlenebilir. </p>
+					<p id="8180e901-8884-4699-81a3-f0984ddd2346" class="p">İzinsiz girişler başlığı hırsızlık olaylarını
+						kapsadığı gibi bilgi sızıntısı oluşturacak durumları da içine almaktadır. Mülkiyet hasarından
+						korunmaktan kasıt ise doğal felaketleri de içine alan bir dizi durumlar için oluşturulan deprem
+						uyarı sistemi, yangın algılama ve uyarı sistemi gibi elektronik ağırlıklı çözümlere alarm
+						sistemleri denmektedir.</p>
+					<p id="b3176468-643d-423e-8e73-3351757af2ff" class="p">
+					</p>
+					<p id="f8683593-1a82-4e8f-bdef-c8a2bcfd4ae2" class="p"><a
+							href="http://www.konya.pol.tr/konya-polis-hirsizlik-ile-mucadele">Alarm sistemleri hırsızlık
+							ile mücadelede en etkili yöntemlerden biridir</a>.</p>
+				</div>
+
 			</div>
-			<div class="column-list" style="display: flex; flex-direction: column;">
+			<div class="column-list">
 				<h2 id="fad88f42-4f0e-4ae6-85da-0f72f9bf6575" class=""><strong>Akıllı güvenlik sistemleri</strong></h2>
 				<p id="f4dc2098-9729-414e-9daa-0a0534b199bf" class="">Akıllı ev teknolojileri son yıllarda gittikçe
 					hayatlarımıza girmeye başladılar. Akıllı süpürgeler, akıllı saatler, akıllı buzdolapları gibi çok
@@ -1025,8 +1053,9 @@
 								hakkında
 								detaylı bilgiler</a></mark></strong> başlıklı yazıyı okuyabilirsiniz.</p>
 			</div>
+
 			<div id="6edd76e7-d62d-4f58-8deb-78ece9cbd3e6" class="column-list">
-				<div id="b5eeb17b-9ae8-425b-97ff-bd529fb2d776" style="width:50%" class="column">
+				<div id="b5eeb17b-9ae8-425b-97ff-bd529fb2d776" class="column">
 					<h3 id="f687919c-73de-4e62-91c3-8c4e56947ba6" class=""><strong>Akıllı ev teknolojisi nedir?</strong>
 					</h3>
 					<p id="5ba0bebf-1220-42b6-8b5a-1e4ec0ec0fe1" class="">Akıllı ev teknolojisi, bilgisayar sistemleri
@@ -1034,7 +1063,7 @@
 						sistem yapan şey, evinizdeki aydınlatma gibi cihazları otomatik olarak kontrol edebilmesidir.
 					</p>
 				</div>
-				<div id="7541c03d-acb5-4230-9ae1-999f967c35d3" style="width:50%" class="column">
+				<div id="7541c03d-acb5-4230-9ae1-999f967c35d3" class="column">
 					<h3 id="f7f4fc93-b726-446d-8fd8-718264e61e57" class=""><strong>Akıllı evler</strong></h3>
 					<p id="0fb97aca-406c-4d17-8373-3ccbe7142fd7" class="">Akıllı ev, ev aletlerini ve eşyalarını kontrol
 						edebilen bir evdir. Bağlı oldukları bir ağ üzerinden bir mobil cihaz veya başka bir bilgisayar
@@ -1042,14 +1071,14 @@
 				</div>
 			</div>
 			<div id="950fb2ac-4d96-4a72-af80-d7b05e4346ca" class="column-list">
-				<div id="3e1fbd2d-d455-4acd-85f1-aafdaf6e51c4" style="width:50%" class="column">
+				<div id="3e1fbd2d-d455-4acd-85f1-aafdaf6e51c4" class="column">
 					<h3 id="e99339d2-8ae0-4b59-b1d3-63d0a0e8e5b8" class=""><strong>Akıllı ev aletleri
 							orkestrasyonu</strong></h3>
 					<p id="f7e75923-8280-420b-b236-e0a48d185d93" class="">Akıllı evler, birbirine bağlı akıllı cihazlar
 						ve sensörlerden oluşur. Bu bağlı cihazlar, <strong>akıllı hub</strong> ya da <strong>smart
 							hub</strong> tarafından yönetilen bir ağda birbirleriyle iletişim kurar.</p>
 				</div>
-				<div id="9e6e5ecb-1057-467e-bb91-928215f72824" style="width:50%" class="column">
+				<div id="9e6e5ecb-1057-467e-bb91-928215f72824" class="column">
 					<h3 id="17844d60-5046-491c-a944-ee73ef282e96" class=""><strong>Akıllı Hub&#x27;ın görevleri</strong>
 					</h3>
 					<p id="665aad62-397d-473a-90d6-4ab2e02d253a" class="">Akıllı hub, cihazlar arasında bir köprü görevi
@@ -1058,7 +1087,7 @@
 						belirtildiği gibi akıllı ev ürünleri</p>
 				</div>
 			</div>
-			<div class="column-list" style="display: flex; flex-direction: column;">
+			<div class="column-list">
 
 				<h3 id="962b02e7-caf1-4fbf-b7f9-78d7da68dde8" class=""><strong>Akıllı ev otomasyonu</strong></h3>
 				<p id="6526c9d3-65c4-40ae-b1b2-39e00ca03a29" class=""><strong>Akıllı ev otomasyonu</strong>, normalde
@@ -1067,7 +1096,7 @@
 					akıllı aydınlatma cihazınızı dilediğiniz zaman telefondan ayarlıyor olabilirsiniz. Gece belirli bir
 					saatten sonra daha loş bir ışığa otomatik olarak geçilmesi ise akıllı ev otomasyonudur.</p>
 			</div>
-			<div class="column-list" style="display: flex; flex-direction: column;">
+			<div class="column-list">
 
 				<h3 id="4afaa9a3-7574-4b80-a0dd-4de50ec68d92" class=""><strong>Akıllı ev otomasyonunun
 						faydaları</strong>
@@ -1088,7 +1117,7 @@
 						style="width:1000px"
 						src="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/person-using-smartphone-his-automated-home-squashed.jpg" /></a>
 			</figure>
-			<div class="column-list" style="display: flex; flex-direction: column;">
+			<div class="column-list">
 
 				<h2 id="ff59ef6e-8533-4437-8684-2e810a2fd926" class="">Alarm sistemleri bileşenleri: Alarm paneli, kapı
 					ve
@@ -1107,9 +1136,19 @@
 					ev güvenlik sistemleri bir çok sensör ve dedektörden oluşmaktadır. Alarm sistemleri dedektörlerinden
 					bazıları şunlardır:</p>
 			</div>
+
 			<div id="b8d8c3a5-39e9-48c9-83c1-59bca8791855" class="column-list">
-				<div id="2d28aee9-a91d-4c46-b059-aa53df41a7f8" style="width:50%" class="column">
-					<h3 id="6a701989-dcc3-4a0b-b645-8709931c68a2" class=""><strong>Alarm Kontrol Paneli</strong></h3>
+				<div id="2d28aee9-a91d-4c46-b059-aa53df41a7f8" class="column">
+					<div id="1d621bde-c089-4ea0-bbae-4d0bd08295b5" class="column">
+						<figure id="378fd958-130f-4c42-82dd-ed1ce98bd48e" class="image"><a
+								href="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/hub-2-plus-siyah-panel-ajax-3328-51-O.jpg"><img
+									style="width:400px"
+									src="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/hub-2-plus-siyah-panel-ajax-3328-51-O.jpg" /></a>
+							<figcaption>Alarm Kontrol Paneli</figcaption>
+						</figure>
+					</div>
+										<h3 id="6a701989-dcc3-4a0b-b645-8709931c68a2" class=""><strong>Alarm Kontrol Paneli</strong></h3>
+
 					<p id="090e3de0-a5e8-4ca8-9e22-d20fe91d592f" class="">Tüm sistemin bir aradalığını sağlayan en
 						önemli bileşen <mark class="highlight-gray"><a
 								href="https://ajax.systems/products/hubs/">a</a></mark><mark class="highlight-gray"><a
@@ -1119,21 +1158,11 @@
 						yardımcı olabilecek alarm sistemi bileşenidir. Sistemin beynidir diyebiliriz. Genel olarak iki
 						tip kontrol paneli mevcuttur. Tek başına kullanılabilen ve merkeze bağlanan.</p>
 				</div>
-				<div id="1d621bde-c089-4ea0-bbae-4d0bd08295b5" style="width:50%" class="column">
-					<figure id="378fd958-130f-4c42-82dd-ed1ce98bd48e" class="image"><a
-							href="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/hub-2-plus-siyah-panel-ajax-3328-51-O.jpg"><img
-								style="width:400px"
-								src="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/hub-2-plus-siyah-panel-ajax-3328-51-O.jpg" /></a>
-						<figcaption>Alarm Kontrol Paneli</figcaption>
-					</figure>
-				</div>
+
 			</div>
-			<p id="25e3af7c-4f0b-4b73-ae70-2c15d8ae4cff" class="">
-			</p>
-			<p id="88112663-37b9-4d07-966a-9d6f87f2fbee" class="">
-			</p>
+
 			<div id="63657663-9eb1-4ca3-86f0-029b702cb90a" class="column-list">
-				<div id="3030e769-dd31-4ad3-ab36-96d8a03a7f2a" style="width:50%" class="column">
+				<div id="3030e769-dd31-4ad3-ab36-96d8a03a7f2a" class="column">
 					<figure id="9e9232c3-bc0e-4329-ba29-4f842b258f35" class="image"><a
 							href="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/paradox-manyetik-kontak-dct2x.jpg"><img
 								style="width:500px"
@@ -1141,7 +1170,7 @@
 						<figcaption>Alarm Sistemi Elemanı: Manyetik Kontak</figcaption>
 					</figure>
 				</div>
-				<div id="ef3ed0d5-6d0b-4fa9-882d-731d2c013e22" style="width:50.000000000000014%" class="column">
+				<div id="ef3ed0d5-6d0b-4fa9-882d-731d2c013e22" class="column">
 					<h3 id="3488e8c9-fb75-4557-bf2d-4ac597a12ff2" class=""><strong>Manyetik Kontak</strong></h3>
 					<p id="1211347c-4428-413b-8c2c-1c1e160a8802" class="">Manyetik kontaklar en bilinen alarm sistemi
 						bileşenidir. Kapı ve pencere gibi yerlere takılırlar. İki tipi mevcuttur: </p>
@@ -1158,9 +1187,17 @@
 			<p id="27a2a0b5-7de9-47cb-9b10-e1d0630a7aa3" class="">
 			</p>
 			<div id="ece990e1-ab28-4454-aeb6-cf38b967a8ff" class="column-list">
-				<div id="8385ba4d-a700-40b1-a18f-3b88952faa70" style="width:50%" class="column">
-					<h3 id="45ac26f4-1ab8-4896-a063-da52dfc49834" class=""><strong>Hareket Algılayıcılar (PIR)</strong>
-					</h3>
+				<div id="8385ba4d-a700-40b1-a18f-3b88952faa70" class="column">
+
+					<div id="9181522c-9e76-487a-bd5c-a597e1c5e234" class="column">
+						<figure id="7c4f861b-5cff-4963-af4a-e4039d341637" class="image"><a
+								href="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/ajax-pir.jpg"><img
+									style="width:900px"
+									src="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/ajax-pir.jpg" /></a>
+						</figure>
+					</div>
+										<h3 id="45ac26f4-1ab8-4896-a063-da52dfc49834" class=""><strong>Hareket Algılayıcılar (PIR)</strong>
+										</h3>
 					<p id="49fa9c89-ff4a-4b1b-8d82-f1c953c262a5" class="">Bu alarm sistemi bileşenleri, kendi bölgesine
 						kızılötesi sinyaller gönderir. İnsan gözüyle görülemeseler de <a
 							href="https://campuspress.yale.edu/soneralbayrak/2017/10/25/siyah-cisim-isimasi/">tüm
@@ -1170,24 +1207,19 @@
 						olarak da bilinirler. Bir hırsız alarm sistemi kurulumu yapılırken, kesinlikle kullanılması
 						gereken bileşenlerdendir.</p>
 				</div>
-				<div id="9181522c-9e76-487a-bd5c-a597e1c5e234" style="width:50%" class="column">
-					<figure id="7c4f861b-5cff-4963-af4a-e4039d341637" class="image"><a
-							href="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/ajax-pir.jpg"><img
-								style="width:900px"
-								src="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/ajax-pir.jpg" /></a></figure>
-				</div>
+
 			</div>
 			<p id="14d937fd-6404-418c-bd15-7b6fd4decec4" class="">
 			</p>
 			<div id="4091a4a8-a233-4bf4-bf3b-fe1bdde07232" class="column-list">
-				<div id="9b6fccfc-5545-421b-9bf6-89494ca5e973" style="width:50%" class="column">
+				<div id="9b6fccfc-5545-421b-9bf6-89494ca5e973" class="column">
 					<figure id="12578c77-559c-442d-9892-7a7b1e6ab5a3" class="image"><a
 							href="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/duman-dedektoru-kablosuz.jpg"><img
 								style="width:900px"
 								src="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/duman-dedektoru-kablosuz.jpg" /></a>
 					</figure>
 				</div>
-				<div id="66da924a-036f-4eba-aee6-c1522e6fcb14" style="width:50%" class="column">
+				<div id="66da924a-036f-4eba-aee6-c1522e6fcb14" class="column">
 					<h3 id="89e53e27-a0aa-4f18-8bd7-eed338719e20" class="">Duman Dedektörü &amp; Isı Dedektörü</h3>
 					<p id="412d02ca-09ad-46bd-beac-96d3239cc155" class="">Genel olarak <a
 							href="https://www.mavili.com.tr/urunlerimiz/akilli-adresli-yangin-algilama-ve-alarm-sistemleri.html">yangın
@@ -1204,43 +1236,49 @@
 			</p>
 
 			<div id="1cd16ac4-4391-45e2-aa7e-a5a0709c5fd2" class="column-list">
-				<div id="a822f359-385c-46d5-99b9-6da244364cf8" style="width:50%" class="column">
-					<h3 id="53e0b846-9357-4aa8-b12a-f651f66ae082" class="">Su Baskın Sensörleri</h3>
+				<div id="a822f359-385c-46d5-99b9-6da244364cf8" class="column">
+					<div id="1d2ffdd6-07e9-411e-bd2c-e41e96d48e32" class="column">
+						<figure id="516e998b-34e6-401c-8cbe-e3a36a563cce" class="image"><a
+								href="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/su-baskn-ajax.jpg"><img
+									style="width:900px"
+									src="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/su-baskn-ajax.jpg" /></a>
+						</figure>
+					</div>
+										<h3 id="53e0b846-9357-4aa8-b12a-f651f66ae082" class="">Su Baskın Sensörleri</h3>
+
 					<p id="89dcf80a-6219-4346-9c4f-bddb0e91aa0d" class="">Su baskını ya da su taşkını olarak bilinen
 						durumlar için en uygun alarm sistemleri bileşenleridir. Su kaçağının olduğu anlarda su kaynağını
 						kapatırlar. Islanma durumunda tehlike yaratabilecek durumlar için idealdirler. Su sayaçlarından
 						veri toplayabilirler.</p>
 				</div>
-				<div id="1d2ffdd6-07e9-411e-bd2c-e41e96d48e32" style="width:50%" class="column">
-					<figure id="516e998b-34e6-401c-8cbe-e3a36a563cce" class="image"><a
-							href="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/su-baskn-ajax.jpg"><img
-								style="width:900px"
-								src="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/su-baskn-ajax.jpg" /></a>
-					</figure>
-				</div>
+
 			</div>
 			<p id="07c58513-21c3-4404-81df-4ac33f652677" class="">
 			</p>
 
 			<div id="faceed2d-7ebd-4dc0-98a7-89961c2dc24b" class="column-list">
-				<div id="d97e4127-eff0-478d-b276-3072fdb3c40f" style="width:50%" class="column">
-					<h3 id="c61a18e3-74ca-4f80-9558-39fc4f2177cf" class=""><strong>Güvenlik Kameraları (Gözetleme
-							Kameraları)</strong></h3>
-					<p id="e912eebb-f990-4b5d-8d73-dde68916f7a3" class="">Genel bir güvenlik sisteminin bir diğer önemli
+				<div id="d97e4127-eff0-478d-b276-3072fdb3c40f" class="column">
+
+					<div id="9d0d8a27-6b00-49bf-9d51-15b2e924ffb1" class="column">
+						<figure id="342599b6-ca8c-4695-95b0-4600e68c125e" class="image"><a
+								href="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/security-camera-mounted-modern-building-orange-wall-horizontal-view-close-up_(1).jpg"><img
+									style="width:1920px"
+									src="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/security-camera-mounted-modern-building-orange-wall-horizontal-view-close-up_(1).jpg" /></a>
+						</figure>
+					</div>
+										<h3 id="c61a18e3-74ca-4f80-9558-39fc4f2177cf" class=""><strong>Güvenlik Kameraları (Gözetleme
+												Kameraları)</strong></h3>
+					<p id="e912eebb-f990-4b5d-8d73-dde68916f7a3" class="p">Genel bir güvenlik sisteminin bir diğer
+						önemli
 						bileşeni <a href="https://tr.wikipedia.org/wiki/Kapal%C4%B1_devre_televizyon">gözetleme
 							kameraları</a> olarak da bilinen (CCTV) sistemleridir. Kamuda en bilinen örnekleri MOBESE
 						kameralarıdır. En az bilinen ve kullanılan güvenlik kameraları da <a
 							href="https://sarkac.org/2020/08/kizilotesi-kamera-nedir-ne-ise-yarar/">Kızılötesi
 							kameralar</a>&#x27;dır. Güvenlik kameralarının çok fazla işlevi vardır. Örneğin:</p>
 				</div>
-				<div id="9d0d8a27-6b00-49bf-9d51-15b2e924ffb1" style="width:50%" class="column">
-					<figure id="342599b6-ca8c-4695-95b0-4600e68c125e" class="image"><a
-							href="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/security-camera-mounted-modern-building-orange-wall-horizontal-view-close-up_(1).jpg"><img
-								style="width:1920px"
-								src="Alarm%20Sistemleri%20e9390128e3114b6fbe0ef37dc026943e/security-camera-mounted-modern-building-orange-wall-horizontal-view-close-up_(1).jpg" /></a>
-					</figure>
-				</div>
+
 			</div>
+			<div id="faceed2d-7ebd-4dc0-98a7-89961c2dc24b" class="column-list">
 			<ul id="bd526730-2587-4651-84cf-42ad7b791487" class="bulleted-list">
 				<li>Mülkünüze kimin girip çıktığını ve kimin zile bastığını bilmenizi sağlar.</li>
 			</ul>
@@ -1275,11 +1313,8 @@
 			<ul id="06c42712-220c-4756-8373-d5b316129446" class="bulleted-list">
 				<li>Kızılötesi kamera</li>
 			</ul>
-			<p id="880a1378-bab0-40dc-b211-311748f476f1" class="">
-			</p>
-			<hr id="8ef470e3-856c-43a2-887b-890e7e86cf41" />
-			<p id="60be0457-807e-40a0-8d60-c2d65e485072" class="">
-			</p>
+			</div>
+
 			<h2 id="4d414376-8055-40d2-89e7-22a4db6bf044" class="">En İyi Alarm Sistemleri ve Güvenlik Sistemleri
 				Firmaları Listesi</h2>
 			<p id="551ccdff-e805-487a-91b3-d28003cd40bc" class="">Türkiye&#x27;nin en bilinen güvenlik sistemleri
@@ -1291,6 +1326,7 @@
 			<p id="8b29df98-f148-4e1b-ab5e-6112b38954ef" class=""> </p>
 			<div id="1b884fa0-c776-4d79-83a0-82afc5340697" class="collection-content">
 				<h4 class="collection-title">Alarm ve Güvenlik Sistemleri Firmaları</h4>
+
 				<table class="collection-content">
 					<thead>
 						<tr>
@@ -1315,48 +1351,33 @@
 											d="M4,3 C4,2.447715 4.447715,2 5,2 L12,2 C12.5523,2 13,2.447716 13,3 C13,3.55228 12.5523,4 12,4 L5,4 C4.447715,4 4,3.55228 4,3 Z M4,7 C4,6.447715 4.447715,6 5,6 L12,6 C12.5523,6 13,6.447716 13,7 C13,7.55228 12.5523,8 12,8 L5,8 C4.447715,8 4,7.55228 4,7 Z M4,11 C4,10.447715 4.447715,10 5,10 L12,10 C12.5523,10 13,10.447716 13,11 C13,11.55228 12.5523,12 12,12 L5,12 C4.447715,12 4,11.55228 4,11 Z M2,4 C1.44771525,4 1,3.55228475 1,3 C1,2.44771525 1.44771525,2 2,2 C2.55228475,2 3,2.44771525 3,3 C3,3.55228475 2.55228475,4 2,4 Z M2,8 C1.44771525,8 1,7.55228475 1,7 C1,6.44771525 1.44771525,6 2,6 C2.55228475,6 3,6.44771525 3,7 C3,7.55228475 2.55228475,8 2,8 Z M2,12 C1.44771525,12 1,11.5522847 1,11 C1,10.4477153 1.44771525,10 2,10 C2.55228475,10 3,10.4477153 3,11 C3,11.5522847 2.55228475,12 2,12 Z">
 										</path>
 									</svg></span>Hizmetler</th>
-							<th><span class="icon property-icon"><svg viewBox="0 0 14 14"
-										style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden"
-										class="typesPhoneNumber">
-										<path
-											d="M2.20731,0.0127209 C2.1105,-0.0066419 1.99432,-0.00664663 1.91687,0.032079 C0.871279,0.438698 0.212942,1.92964 0.0580392,2.95587 C-0.426031,6.28627 2.20731,9.17133 4.62766,11.0689 C6.77694,12.7534 10.9012,15.5223 13.3409,12.8503 C13.6507,12.5211 14.0186,12.037 13.9993,11.553 C13.9412,10.7397 13.186,10.1588 12.6051,9.71349 C12.1598,9.38432 11.2304,8.47427 10.6495,8.49363 C10.1267,8.51299 9.79754,9.05515 9.46837,9.38432 L8.88748,9.96521 C8.79067,10.062 7.55145,9.24878 7.41591,9.15197 C6.91248,8.8228 6.4284,8.45491 6.00242,8.04829 C5.57644,7.64167 5.18919,7.19632 4.86002,6.73161 C4.7632,6.59607 3.96933,5.41495 4.04678,5.31813 C4.04678,5.31813 4.72448,4.58234 4.91811,4.2919 C5.32473,3.67229 5.63453,3.18822 5.16982,2.45243 C4.99556,2.18135 4.78257,1.96836 4.55021,1.73601 C4.14359,1.34875 3.73698,0.942131 3.27227,0.612963 C3.02055,0.419335 2.59457,0.0708094 2.20731,0.0127209 Z">
-										</path>
-									</svg></span>Tel</th>
-							<th><span class="icon property-icon"><svg viewBox="0 0 14 14"
-										style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden"
-										class="typesEmail">
-										<path
-											d="M14,6.22508 C14,7.0471 13.8666,7.79918 13.5999,8.48134 C13.3332,9.16351 12.9563,9.69867 12.4692,10.0868 C11.9821,10.475 11.524,10.6862 10.9764,10.6862 C10.5473,10.6862 10.1676,10.5849 9.83705,10.3823 C9.50653,10.1796 9.2688,9.91274 9.12384,9.58165 C8.51065,10.318 7.56114,10.6862 6.5928,10.6862 C5.56647,10.6862 4.75762,10.3823 4.16618,9.77431 C3.57473,9.16636 3.27902,8.33436 3.27902,7.27829 C3.27902,6.0738 3.66752,5.10337 4.44451,4.36697 C5.2215,3.63058 6.2362,3.26239 7.48867,3.26239 C7.98734,3.26239 9.5206,3.47449 9.74131,3.53033 C10.2518,3.65949 10.6003,4.12335 10.5763,4.6417 C10.5697,4.78537 10.5175,5.88115 10.4198,7.92905 C10.4198,8.72253 10.6401,9.11927 11.0808,9.11927 C11.4519,9.11927 11.7476,8.8524 11.968,8.31865 C12.1883,7.78491 12.2985,7.08706 12.2985,6.22508 C12.2985,5.30601 12.1042,4.49399 11.7157,3.78899 C11.3272,3.08399 10.7808,2.54597 10.0762,2.17492 C9.37173,1.80387 8.56719,1.61835 7.66263,1.61835 C6.49134,1.61835 5.47373,1.85525 4.60976,2.32905 C3.74579,2.80286 3.08332,3.48644 2.62234,4.37981 C2.16136,5.27319 1.93089,6.30499 1.93089,7.47523 C1.93089,9.05077 2.35851,10.2595 3.21378,11.1015 C4.06905,11.9435 5.30847,12.3645 6.93203,12.3645 C7.54667,12.3645 8.22216,12.2975 8.95856,12.1633 C9.18419,12.1222 9.47682,12.0555 9.83645,11.9632 C10.2649,11.8532 10.7081,12.0814 10.8607,12.4905 C11.0082,12.8863 10.802,13.3249 10.4001,13.4701 C10.3865,13.475 10.3728,13.4796 10.359,13.4837 C9.30721,13.7996 8.18808,13.9716 7.00161,14 C4.7982,14 3.08041,13.4292 1.84823,12.2875 C0.616061,11.1458 0,9.55883 0,7.52661 C0,6.11661 0.314555,4.8365 0.943688,3.68624 C1.57282,2.53598 2.46867,1.63405 3.63126,0.980429 C4.79385,0.326807 6.13184,0 7.64524,0 C8.9209,0 10.1589,0.290316 11.0634,0.770643 C11.968,1.25097 12.6374,1.99796 13.1824,2.94557 C13.7275,3.89318 14,4.98634 14,6.22508 Z M5.38462,7.23555 C5.38462,8.44263 5.87335,9.04616 6.85083,9.04616 C7.3623,9.04616 7.75159,8.86452 8.01869,8.50126 C8.28579,8.13799 8.44773,7.54734 8.50456,6.72927 L8.61539,4.83286 C8.32555,4.76993 7.9988,4.73846 7.63509,4.73846 C6.92471,4.73846 6.37204,4.96157 5.97707,5.40779 C5.58211,5.854 5.38462,6.46325 5.38462,7.23555 Z">
-										</path>
-									</svg></span>Eposta</th>
 						</tr>
 					</thead>
 					<tbody>
-						<tr id="b21c50bd-1124-446a-97ee-c3f678528239">
-							<td class="cell-title"><a rel="noopener nofollow" rel="_target"
+						<tr id="b21c50bd-1124-446a-97ee-c3f678528239" style="padding-top:64px">
+							<td class="cell-title"><a target="_blank" rel="noopener nofollow"
 									href="https://www.pronet.com.tr/">Pronet
 								</a></td>
 							<td class="cell-;irM">Türkiye&#x27;de güvenlik sektörünün öncü firması Pronet, güvenlik,
-								kamera ve alarm sistemleri ile ev, işyeri ve kurumlara yönelik güvenlik çözümleri
-								sunmaktadır.</td>
+								kamera
+								ve alarm sistemleri ile ev, işyeri ve kurumlara yönelik güvenlik çözümleri sunmaktadır.
+							</td>
 							<td class="cell-Se=E"><span class="selected-value select-value-color-purple">akıllı ev
 									sistemleri</span><span class="selected-value select-value-color-default">alarm
-									izleme merkezi</span><span class="selected-value select-value-color-blue">güvenlik
+									izleme
+									merkezi</span><span class="selected-value select-value-color-blue">güvenlik
 									kamerası</span><span class="selected-value select-value-color-green">hırsız
 									alarmı</span><span class="selected-value select-value-color-blue">su
 									baskını</span><span class="selected-value select-value-color-red">yangın
 									alarmı</span></td>
-							<td class="cell-X}hR"><a rel="noopener noreferrer nofollow" target="_blank"
-									href="tel:+904441911" class="url-value">+904441911</a></td>
-							<td class="cell-Yxxz"></td>
 						</tr>
-						<tr id="f75d9e64-aa45-49f4-aeac-457bbd5f27e7">
-							<td class="cell-title"><a rel="noopener nofollow" rel="_target"
-									href="https://www.filizguvenlik.com.tr/">Filiz
+						<tr id="f75d9e64-aa45-49f4-aeac-457bbd5f27e7" style="padding-top:64px">
+							<td class="cell-title"><a href="https://www.filizguvenlik.com.tr/">Filiz
 									Güvenlik Sistemleri </a></td>
 							<td class="cell-;irM">Filiz Güvenlik Sistemleri 1994 yılından beri faaliyette olan ve
-								merkezi İzmir&#x27;de bulunan bir elektronik güvenlik sistemleri tedarikçisi ve
-								uygulayıcısıdır.</td>
+								merkezi
+								İzmir&#x27;de bulunan bir elektronik güvenlik sistemleri tedarikçisi ve uygulayıcısıdır.
+							</td>
 							<td class="cell-Se=E"><span class="selected-value select-value-color-pink">akıllı ev
 									otomasyonu</span><span class="selected-value select-value-color-purple">akıllı ev
 									sistemleri</span><span class="selected-value select-value-color-blue">güvenlik
@@ -1364,14 +1385,9 @@
 									alarmı</span><span class="selected-value select-value-color-blue">su
 									baskını</span><span class="selected-value select-value-color-red">yangın
 									alarmı</span></td>
-							<td class="cell-X}hR"><a rel="noopener noreferrer nofollow" target="_blank"
-									href="tel:+902324417174" class="url-value">+902324417174</a></td>
-							<td class="cell-Yxxz"><a rel="noopener noreferrer nofollow" target="_blank"
-									href="mailto:info@filizguvenlik.com.tr"
-									class="url-value">info@filizguvenlik.com.tr</a></td>
 						</tr>
-						<tr id="871322ba-8974-472b-a6b5-e609b857eaac">
-							<td class="cell-title"><a rel="noopener nofollow" rel="_target"
+						<!--tr id="871322ba-8974-472b-a6b5-e609b857eaac" style="padding-top:64px">
+							<td class="cell-title"><a
 									href="https://www.kalealarm.com.tr/">Kale
 									Alarm </a></td>
 							<td class="cell-;irM">KALE ALARM ile ev veya iş yerlerine kurulacak olan alarm sistemleri,
@@ -1380,101 +1396,87 @@
 									merkezi</span><span class="selected-value select-value-color-blue">güvenlik
 									kamerası</span><span class="selected-value select-value-color-green">hırsız
 									alarmı</span></td>
-							<td class="cell-X}hR"><a rel="noopener noreferrer nofollow" target="_blank"
-									href="tel:+904447240" class="url-value">+904447240</a></td>
-							<td class="cell-Yxxz"></td>
-						</tr>
-						<tr id="ce7e8c62-2f6b-4e84-8959-b679ed4bf871">
-							<td class="cell-title"><a rel="noopener nofollow" rel="_target"
+						</tr-->
+						<tr id="ce7e8c62-2f6b-4e84-8959-b679ed4bf871" style="padding-top:64px">
+							<td class="cell-title"><a target="_blank" rel="noopener nofollow"
 									href="https://www.tepeguvenlik.com.tr/">Tepe
 									Güvenlik </a></td>
 							<td class="cell-;irM">Tepe Güvenlik Ev Alarm Sistemleri ve İş Yeri Alarm Sistemleri
-								Sayesinde Can ve Mal Güvenliğiniz Koruma Altında!</td>
+								Sayesinde
+								Can ve Mal Güvenliğiniz Koruma Altında!</td>
 							<td class="cell-Se=E"><span class="selected-value select-value-color-blue">güvenlik
 									kamerası</span><span class="selected-value select-value-color-green">hırsız
 									alarmı</span><span class="selected-value select-value-color-red">yangın
-									alarmı</span></td>
-							<td class="cell-X}hR"><a rel="noopener noreferrer nofollow" target="_blank"
-									href="tel:+904448373 " class="url-value">+904448373 </a></td>
-							<td class="cell-Yxxz"></td>
+									alarmı</span>
+							</td>
 						</tr>
-						<tr id="e70f7a23-bb9f-4d72-8436-9c5fe90f98c1">
-							<td class="cell-title"><a rel="noopener nofollow" rel="_target"
+						<tr id="e70f7a23-bb9f-4d72-8436-9c5fe90f98c1" style="padding-top:64px">
+							<td class="cell-title"><a target="_blank" rel="noopener nofollow"
 									href="https://www.mavili.com.tr/">Mavili
-									Elektronik </a></td>
+									Elektronik</a></td>
 							<td class="cell-;irM">Yangın ve Gaz Algılama Sistemleri” üretmek amacıyla İstanbul’da
-								kuruldu. </td>
+								kuruldu.
+							</td>
 							<td class="cell-Se=E"><span class="selected-value select-value-color-red">yangın
-									alarmı</span></td>
-							<td class="cell-X}hR"><a rel="noopener noreferrer nofollow" target="_blank"
-									href="tel:+902164664505" class="url-value">+902164664505</a></td>
-							<td class="cell-Yxxz"></td>
+									alarmı</span>
+							</td>
 						</tr>
-						<tr id="eeb44f40-7af5-41c5-89c5-031f907ddf24">
-							<td class="cell-title"><a rel="noopener nofollow" rel="_target"
+						<tr id="eeb44f40-7af5-41c5-89c5-031f907ddf24" style="padding-top:64px">
+							<td class="cell-title"><a target="_blank" rel="noopener nofollow"
 									href="https://secomtr.com/">SECOM
 								</a></td>
 							<td class="cell-;irM">1962 yılında Japonya’nın ilk güvenlik hizmetleri sağlayıcısı olarak
 								kurulan SECOM, her zaman, her yerde güvenlik hissi sağlayan, yaşamı daha konforlu ve
-								rahat bir hale getiren hizmetler ve sistemler geliştirmektedir.</td>
+								rahat
+								bir hale getiren hizmetler ve sistemler geliştirmektedir.</td>
 							<td class="cell-Se=E"><span class="selected-value select-value-color-blue">güvenlik
 									kamerası</span><span class="selected-value select-value-color-green">hırsız
 									alarmı</span><span class="selected-value select-value-color-blue">su
 									baskını</span><span class="selected-value select-value-color-red">yangın
 									alarmı</span></td>
-							<td class="cell-X}hR"><a rel="noopener noreferrer nofollow" target="_blank"
-									href="tel:+904447100" class="url-value">+904447100</a></td>
-							<td class="cell-Yxxz"></td>
 						</tr>
-						<tr id="310f0882-5020-4111-ba32-c07b8576a8ca">
-							<td class="cell-title"><a rel="noopener nofollow" rel="_target"
+						<tr id="310f0882-5020-4111-ba32-c07b8576a8ca" style="padding-top:64px">
+							<td class="cell-title"><a target="_blank" rel="noopener"
 									href="https://livicomturkiye.com/">Livicom
 								</a></td>
 							<td class="cell-;irM">2001&#x27;de Rusya&#x27;da kurulan akıllı ev güvenlik sistemleri ve
-								alarm otomasyon firması. </td>
+								alarm
+								otomasyon firması. </td>
 							<td class="cell-Se=E"><span class="selected-value select-value-color-pink">akıllı ev
 									otomasyonu</span><span class="selected-value select-value-color-purple">akıllı ev
 									sistemleri</span><span class="selected-value select-value-color-default">alarm
-									izleme merkezi</span><span class="selected-value select-value-color-blue">güvenlik
+									izleme
+									merkezi</span><span class="selected-value select-value-color-blue">güvenlik
 									kamerası</span><span class="selected-value select-value-color-green">hırsız
 									alarmı</span><span class="selected-value select-value-color-blue">su
 									baskını</span><span class="selected-value select-value-color-red">yangın
 									alarmı</span></td>
-							<td class="cell-X}hR"><a rel="noopener noreferrer nofollow" target="_blank"
-									href="tel:+902324417174" class="url-value">+902324417174</a></td>
-							<td class="cell-Yxxz"><a rel="noopener noreferrer nofollow" target="_blank"
-									href="mailto:info@livicomturkiye.com" class="url-value">info@livicomturkiye.com</a>
-							</td>
 						</tr>
-						<tr id="6897a259-0f01-467b-8d99-593aedfff6ce">
-							<td class="cell-title"><a rel="noopener nofollow" rel="_target"
+						<tr id="6897a259-0f01-467b-8d99-593aedfff6ce" style="padding-top:64px">
+							<td class="cell-title"><a target="_blank" rel="noopener nofollow"
 									href="https://www.asmguvenlik.com/">ASM
 								</a></td>
 							<td class="cell-;irM">ASM A.Ş., alarm ve güvenlik sistemleri tesis eden firmalara hizmet
 								vererek, sektöründe bu alanda “alarm izleme hizmeti” veren bağımsız bir firmadır.</td>
 							<td class="cell-Se=E"><span class="selected-value select-value-color-default">alarm izleme
 									merkezi</span></td>
-							<td class="cell-X}hR"><a rel="noopener noreferrer nofollow" target="_blank"
-									href="tel:+902164648887" class="url-value">+902164648887</a></td>
-							<td class="cell-Yxxz"></td>
 						</tr>
-						<tr id="8d2806a2-969c-4f4b-848b-86417bfa0d26">
-							<td class="cell-title"><a rel="noopener nofollow" rel="_target"
+						<tr id="8d2806a2-969c-4f4b-848b-86417bfa0d26" style="padding-top:64px">
+							<td class="cell-title"><a target="_blank" rel="noopener nofollow"
 									href="https://www.karel.com.tr/">Karel
 								</a></td>
 							<td class="cell-;irM">Karel, Türkiye’de elektronik haberleşme sistemlerine geçişte öncü
-								olmuş, Türkiye&#x27;nin Ar-Ge’den tasarıma, üretimden satış sonrası hizmetlere kadar tüm
-								süreçlere sahip lider teknoloji şirketidir.</td>
+								olmuş,
+								Türkiye&#x27;nin Ar-Ge’den tasarıma, üretimden satış sonrası hizmetlere kadar tüm
+								süreçlere
+								sahip lider teknoloji şirketidir.</td>
 							<td class="cell-Se=E"><span class="selected-value select-value-color-default">alarm izleme
 									merkezi</span><span class="selected-value select-value-color-blue">güvenlik
 									kamerası</span><span class="selected-value select-value-color-green">hırsız
 									alarmı</span></td>
-							<td class="cell-X}hR"><a rel="noopener noreferrer nofollow" target="_blank"
-									href="tel:+902123554800" class="url-value">+902123554800</a></td>
-							<td class="cell-Yxxz"></td>
 						</tr>
-						<tr id="79d148e8-5f07-450c-abf8-1b2b51f8a542">
-							<td class="cell-title"><a rel="noopener nofollow" rel="_target"
+						<tr id="79d148e8-5f07-450c-abf8-1b2b51f8a542" style="padding-top:64px">
+							<td class="cell-title"><a target="_blank" rel="noopener nofollow"
 									href="http://www.bogaziciizleme.com.tr/">Boğaziçi
 									Alarm İzleme Merkezi </a></td>
 							<td class="cell-;irM">Boğaziçi alarm 2007 tarihinden bugüne bayi odaklı çalışmasıyla,
@@ -1482,35 +1484,105 @@
 							<td class="cell-Se=E"><span class="selected-value select-value-color-default">alarm izleme
 									merkezi</span><span class="selected-value select-value-color-green">hırsız
 									alarmı</span><span class="selected-value select-value-color-red">yangın
-									alarmı</span></td>
-							<td class="cell-X}hR"><a rel="noopener noreferrer nofollow" target="_blank"
-									href="tel:+902165370072" class="url-value">+902165370072</a></td>
-							<td class="cell-Yxxz"><a rel="noopener noreferrer nofollow" target="_blank"
-									href="mailto:info@bogaziciizleme.com.tr"
-									class="url-value">info@bogaziciizleme.com.tr</a></td>
+									alarmı</span>
+							</td>
 						</tr>
 					</tbody>
 				</table>
+				<style>
+					@media only screen and (min-width: 600px) {
+
+						table,
+						th,
+						td {
+							border: 1px solid rgba(55, 53, 47, 0.09);
+							border-collapse: collapse;
+							font-size: 16px !important;
+							word-wrap: break-word !important;
+
+						}
+
+						tr {
+							display: flex;
+							flex-direction: column;
+						}
+
+						td a {
+							font-size: 17px !important;
+							word-wrap: break-word !important
+						}
+
+						td span {
+							font-size: 15px !important;
+							word-wrap: break-word !important;
+						}
+
+						table {
+							border-left: none;
+							border-right: none;
+						}
+
+						th,
+						td {
+							font-weight: normal;
+							padding: 0.25em 0.5em;
+							line-height: 1.5;
+							min-height: 1.5em;
+							text-align: left;
+						}
+
+						th {
+							color: rgba(55, 53, 47, 0.6);
+						}
+
+						td>.user,
+						td>time {
+							white-space: nowrap;
+						}
+					}
+
+					@media only screen and (max-width: 600px) {
+
+						table,
+						th,
+						td {
+							border: 1px solid rgba(55, 53, 47, 0.09);
+							border-collapse: collapse;
+							font-size: 16px !important;
+							word-wrap: break-word !important;
+
+						}
+
+						tr {
+							display: flex;
+							flex-direction: column;
+							font-size: 16px !important;
+							margin-top: 32px !important;
+						}
+
+						td a {
+							font-size: 14px !important;
+							word-wrap: break-word !important
+						}
+
+						td span {
+							font-size: 16px !important;
+							word-wrap: break-word !important;
+
+						}
+
+						td.cell-title,
+						tr {
+							padding-top: 32px !important;
+						}
+					}
+
+					p.p,
+					p {
+						font-size: 16px !important;
+					}
+				</style>
 			</div>
-			<p id="68d2842b-beda-4870-9a7c-a46060e9251b" class="">
-			</p>
-			<p id="3fa2d0c5-acaf-48e5-97ee-b798890e9785" class="">
-			</p>
-			<p id="2202493f-4af1-46ad-850a-e6df18f0bb52" class="">
-			</p>
-			<p id="f237f29d-286d-48a0-a9bc-3e770cad4942" class="">
-			</p>
-			<p id="ad1e5e6c-3df4-404f-958c-0824a665d491" class="">
-			</p>
-			<p id="0a47df3b-6a20-4229-88dd-2c573d34d641" class="">
-			</p>
-			<p id="5d016f6f-b966-4b5e-aff9-38724845c24b" class="">
-			</p>
-			<p id="b84d9943-c444-4370-a58f-9f1490f52cf9" class="">
-			</p>
-			<p id="e699019e-e9d1-45e6-9012-86e4ca4f1df5" class="">
-			</p>
-		</div>
 	</article>
 </body>
 
